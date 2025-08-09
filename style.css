@@ -1,12 +1,13 @@
-/*:root {
-  --primary: #4A90E2;
-  --background: #232a36;
-  --block-bg: #232a36;
-  --border: 1.5px solid #e4e9ef;
-  --text: #F9FAFC;
-  --accent-pink: #F78DA7;
-  --accent-green: #7ED6A5;
-  --dark-detail: #2D2D2D;
+/* Se aplica a todo el documento */
+:root {
+  --primary: #4A90E2; /*Color principal*/
+  --background: #232a36; /* Color de fondo*/
+  --block-bg: #232a36; /* Color de fondo de cada bloque*/
+  --border: 1.5px solid #e4e9ef; /* Color de borde de cada bloque */
+  --text: #F9FAFC; /* Color de texto*/
+  --accent-pink: #F78DA7; /* Color secundario*/
+  --accent-green: #7ED6A5; /* Color secundario*/
+  --dark-detail: #2D2D2D; /*Efectos secundarios*/
 }
 
 body {
@@ -28,6 +29,7 @@ body {
   box-shadow: 0 2px 8px #0003;
   width: fit-content;
 }
+
 .icon-bar a {
   display: flex;
   align-items: center;
@@ -35,9 +37,11 @@ body {
   border-right: 1px solid #394052;
   transition: background 0.18s;
 }
+
 .icon-bar a:last-child {
   border-right: none;
 }
+
 .icon-bar img {
   width: 28px;
   height: 28px;
@@ -45,6 +49,7 @@ body {
   opacity: 0.92;
   transition: opacity 0.2s, transform 0.2s;
 }
+
 .icon-bar a:hover img {
   opacity: 1;
   transform: scale(1.17);
@@ -56,7 +61,7 @@ main {
   padding: 0 10px;
 }
 
-/* Bloques generales para Projects, Notes, Contact, Experience, Hackathons 
+/* Bloques generales para Projects, Notes, Contact, Experience, Hackathons */
 .block {
   background: var(--block-bg);
   border-radius: 16px;
@@ -159,7 +164,7 @@ footer {
   }
 }
 
-/*PARA LO DE ESPACIO PERSONAL
+/*PARA LO DE ESPACIO PERSONAL */
 .hobbies-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -211,7 +216,7 @@ footer {
   transform: scale(1.1);
 }
 
-/* Responsive tweaks 
+/* Responsive tweaks */
 @media (max-width: 700px) {
   .hobbies-gallery {
     grid-template-columns: 1fr 1fr;
@@ -225,7 +230,7 @@ footer {
   }
 }
 
-/* SECCION PROYECTOS 
+/* SECCION PROYECTOS */
 
 .projects-gallery {
   display: flex;
@@ -328,7 +333,7 @@ footer {
   }
 }
 
-/* APARTADO EXPERIENCIA
+/* APARTADO EXPERIENCIA */
 
 .experiencia-timeline {
   display: flex;
@@ -377,7 +382,7 @@ footer {
   margin: 4px 0 0 0;
 }
 
-/* APARTADO EDUCACION
+/* APARTADO EDUCACION */
 .educacion-list {
   display: flex;
   flex-direction: column;
@@ -474,7 +479,7 @@ footer {
   }
 }
 
-/* APARTADO DE HACKATHONS 
+/* APARTADO DE HACKATHONS */
 
 .hackathons-list-simple {
   list-style: none;
@@ -534,7 +539,7 @@ footer {
   }
 }
 
-/* APARATDO DE BLOG
+/* APARATDO DE BLOG */
 
 .blog-block {
   margin-top: 32px;
@@ -585,7 +590,7 @@ footer {
   }
 }
 
-/* APARTADO DE CONTACTO
+/* APARTADO DE CONTACTO */
 .contacto-block {
   margin-top: 38px;
 }
@@ -649,7 +654,7 @@ footer {
   }
 }
 
-/* SECCION DE INICIO (LA DE HI VALENTECHIE)
+/* SECCION DE INICIO (LA DE HI VALENTECHIE) */
 .hero-main-card {
   background: #232A34;
   padding: 18px 5px 12px 5px;
@@ -771,7 +776,7 @@ footer {
   background: #fff;
   border: 2px solid #b8c1d4;
   box-shadow: 0 2px 12px #0001;
-  /* Aquí puedes poner la imagen real: background-image: url('ruta/a/tu-foto.jpg'); background-size: cover;
+  /* Aquí puedes poner la imagen real: background-image: url('ruta/a/tu-foto.jpg'); background-size: cover;*/
   background-image: url('photos/perfil.jpeg');
   background-size: cover;
 }
@@ -826,4 +831,4 @@ footer {
     padding: 12px 6px;
     margin-top: 20px;
   }
-}*/
+}
