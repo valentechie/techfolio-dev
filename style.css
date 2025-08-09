@@ -25,11 +25,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 28px;
+  gap: 17px;
   background: var(--background); /* usando variable */
   border-radius: 32px;
-  padding: 10px 32px;
-  margin: 32px auto 0 auto;
+  padding: 10px 35px;
   box-shadow: 0 2px 8px #0003;
   width: fit-content;
   position: fixed;
@@ -37,18 +36,21 @@ body {
   left: 50%;
   transform: translateX(-50%);
   z-index: 100;
+  margin: 32px auto 0 auto;
 }
 
 .icon-bar a {
   display: flex;
   align-items: center;
   padding: 0 6px;
+  padding-right: 20px;     /* aumenta este valor para más espacio a la línea */
   border-right: var(--border); /* usando variable */
   transition: background 0.18s;
 }
 
 .icon-bar a:last-child {
   border-right: none;
+  padding-right: 7px; /* igual que el izquierdo */
 }
 
 /*tamaño del icono*/
@@ -65,7 +67,7 @@ body {
 }
 
 .icon-bar a:focus img {
-  outline: 2px solid var(--primary);
+  outline: none;
 }
 
 main {
@@ -87,7 +89,8 @@ main {
   }
 }
 
-/*=====================================================================================*/
+/*=====================================================================================*
+========================================================================================/
 
 /* Bloques generales para Projects, Notes, Contact, Experience, Hackathons */
 .block {
@@ -684,7 +687,6 @@ footer {
 
 /* SECCION DE INICIO (LA DE HI VALENTECHIE) */
 .hero-main-card {
-  background: #232A34;
   padding: 18px 5px 12px 5px;
   max-width: 850px;
   margin: 4px auto 0 auto;
