@@ -1,13 +1,16 @@
 /* Se aplica a todo el documento */
 :root {
-  --primary: #4A90E2; /*Color principal*/
-  --background: #232a36; /* Color de fondo*/
-  --block-bg: #232a36; /* Color de fondo de cada bloque*/
-  --border: 1.5px solid #e4e9ef; /* Color de borde de cada bloque */
-  --text: #F9FAFC; /* Color de texto*/
-  --accent-pink: #F78DA7; /* Color secundario*/
-  --accent-green: #7ED6A5; /* Color secundario*/
-  --dark-detail: #2D2D2D; /*Efectos secundarios*/
+  --primary: #2979FF;        /* Azul principal */
+  --background: #F9FAFC;     /* Fondo general */
+  --block-bg: #FFFFFF;       /* Cards y bloques */
+  --border: 1.5px solid #E4E9EF;
+  --text: #232a36;           /* Texto principal */
+  --text-secondary: #4A4E57; /* Texto secundario */
+  --accent-pink: #F78DA7;    /* Rosa acento */
+  --accent-green: #7ED6A5;   /* Verde acento */
+  --accent-gold: #FFD600;    /* Amarillo acento */
+  --dark-detail: #E1E5EA;    /* Detalle/fondo hover */
+  --danger: #FF4F4F;         /* Error */
 }
 
 body {
@@ -22,20 +25,25 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 28px; /* separacion entre iconos*/
-  background: #729de7;
+  gap: 28px;
+  background: var(--background); /* usando variable */
   border-radius: 32px;
-  padding: 10px 32px; /* agrega espacio interno, 10 hacia dentro y 32 hacia los lados*/
-  margin: 32px auto 0 auto; /*Agrega espacio exterior (hacia fuera) alrededor de la barra.*/
+  padding: 10px 32px;
+  margin: 32px auto 0 auto;
   box-shadow: 0 2px 8px #0003;
   width: fit-content;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
 }
 
 .icon-bar a {
   display: flex;
   align-items: center;
   padding: 0 6px;
-  border-right: 1px solid #ffffff; /* linea vertical derecha que separa los iconos*/
+  border-right: var(--border); /* usando variable */
   transition: background 0.18s;
 }
 
@@ -43,33 +51,43 @@ body {
   border-right: none;
 }
 
+/*tamaño del icono*/
 .icon-bar img {
-  /*tamaño del icono*/
-  width: 28px;
-  height: 28px;
-  /*Invierte los colores de los iconos*/
-  filter: invert(1) brightness(2);
+  width: 36px;
+  height: 36px;
   opacity: 0.92;
   transition: opacity 0.2s, transform 0.2s;
 }
 
-/*Transiciones*/
 .icon-bar a:hover img {
   opacity: 1;
   transform: scale(1.17);
 }
 
-/*Medidas cuando cambia el tamaño del web*/
+.icon-bar a:focus img {
+  outline: 2px solid var(--primary);
+}
+
 main {
   max-width: 800px;
-  margin: 40px auto 0 auto;
+  margin: 115px auto 0 auto; /* Un solo margin, con suficiente espacio arriba */
   padding: 0 10px;
 }
 
+/* Responsive */
+@media (max-width: 500px) {
+  .icon-bar {
+    padding: 8px 12px;
+    border-radius: 20px;
+    gap: 12px;
+  }
+  .icon-bar img {
+    width: 22px;
+    height: 22px;
+  }
+}
+
 /*=====================================================================================*/
-
-
-
 
 /* Bloques generales para Projects, Notes, Contact, Experience, Hackathons */
 .block {
