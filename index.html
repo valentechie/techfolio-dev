@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valentechie | Portafolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!-- Barra de iconos superior tipo pill -->
+  <nav class="icon-bar">
+    <a href="#home" title="Inicio"><img src="icons/home.svg" alt="Home"></a>
+    <!--<a href="#notas" title="Notas"><img src="icons/notas.svg" alt="Blog"></a>-->
+    <a href="https://github.com/valentechie" target="_blank" title="GitHub"><img src="icons/github.svg" alt="GitHub"></a>
+    <a href="https://www.linkedin.com/in/valentechie" target="_blank" title="LinkedIn"><img src="icons/linkedin.svg" alt="LinkedIn"></a>
+    <a href="https://youtube.com/@valentechie" target="_blank" title="YouTube"><img src="icons/youtube.svg" alt="YouTube"></a>
+    <a href="#" id="toggle-dark" title="Modo oscuro"><img src="icons/moon.svg" alt="Modo Oscuro"></a>
+  </nav>
+
+  <main>
+    <section class="block hero-block" id="inicio">
+      <div class="hero-main-card">
+        <div class="hero-row">
+          <div>
+            <h1 class="hero-title">
+              Hi, I'm Valentechie <span class="hero-wave">👋</span>
+            </h1>
+            <div class="hero-badge">
+              <span class="badge-opportunities">Open to opportunities</span>
+            </div>
+            <div class="hero-subtitle">Aspiring Robotic Software Engineer</div>
+            <p class="hero-intro">
+              Passionate about building technological solutions that connect creativity, code, and purpose. 
+              <span class="hero-emoji">🧑‍💻</span>
+            </p>
+            <div class="hero-actions">
+              <a href="Valentechie-CV.pdf" class="hero-cv-btn" download>
+                <span class="cv-icon">📄</span> Download CV
+              </a>
+            </div>
+          </div>
+          <div class="hero-photo-box">
+            <span class="hero-photo-label"></span>
+            <div class="hero-photo"></div>
+          </div>
+        </div>
+        <div class="hero-about-card">
+          <div class="hero-about-title">About</div>
+          <div class="hero-about-text">
+            I'm passionate about modern web development, UI/UX, and open-source. I've contributed to multiple projects, written tutorials and participated in coding hackathons. 
+            <br><br>
+            My approach combines creativity, curiosity, and a mindset of constant improvement. I am particularly interested in intuitive interface design, intelligent automation, and impactful open-source projects. I am always open to collaborating, exploring new ideas, and growing as a developer.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Espacio personal (hobbies, fotos) -->
+      <section class="block personal-block" id="personal">
+      <h2>In my free time</h2>
+      <div class="hobbies-gallery">
+        <div class="hobby-photo hobby-robotics">
+          <img src="images/robotics.jpg" alt="Rubik">
+          <span class="hobby-label">Rubik's cube</span>
+        </div>
+        <div class="hobby-photo hobby-music">
+          <img src="images/music.jpg" alt="Sudoku">
+          <span class="hobby-label">Sudoku</span>
+        </div>
+        <div class="hobby-photo hobby-hiking">
+          <img src="images/hiking.jpg" alt="Lego">
+          <span class="hobby-label">Lego</span>
+        </div>
+        <div class="hobby-photo hobby-painting">
+          <img src="images/painting.jpg" alt="Sketch">
+          <span class="hobby-label">Sketch</span>
+        </div>
+        <div class="hobby-photo hobby-coding">
+          <img src="images/coding.jpg" alt="Lettering">
+          <span class="hobby-label">Lettering</span>
+        </div>
+        <!-- Agrega más fotos/hobbies si lo deseas -->
+      </div>
+    </section>
+
+  <section class="block experiencia-block" id="experiencia">
+    <h2>Experience</h2>
+    <div class="experiencia-timeline">
+      <div class="experiencia-entry">
+        <div class="exp-header">
+          <span class="exp-role">Robotics Team Lead</span>
+          <span class="exp-type">Volunteering</span>
+          <span class="exp-date">2023–Present</span>
+        </div>
+        <p>Led a student team, organized workshops, and managed robotics projects for competitions. Fostered collaboration and creativity.</p>
+      </div>
+      <div class="experiencia-entry">
+        <div class="exp-header">
+          <span class="exp-role">Open Source Contributor</span>
+          <span class="exp-type">Community</span>
+          <span class="exp-date">2022–Present</span>
+        </div>
+        <p>Contributed to web apps and mentored new developers in friendly, open communities.</p>
+      </div>
+      <div class="experiencia-entry">
+        <div class="exp-header">
+          <span class="exp-role">Project Manager</span>
+          <span class="exp-type">Professional</span>
+          <span class="exp-date">2024–Present</span>
+        </div>
+        <p>Managed web development projects for a startup, focusing on agile methods, communication and leadership.</p>
+      </div>
+      <!-- Agrega más experiencias aquí -->
+    </div>
+  </section>
+
+  <section class="block educacion-block" id="educacion">
+    <h2>Education & Certifications</h2>
+      <div class="educacion-list">
+        <div class="educacion-entry">
+          <div class="edu-photo">
+            <img src="images/university_logo.png" alt="University Logo">
+          </div>
+          <div class="edu-content">
+            <div class="edu-header">
+              <span class="edu-title">Computer Science</span>
+              <span class="edu-org">University Name</span>
+              <span class="edu-date">2019–2023</span>
+            </div>
+            <p>Graduated with honors. Focused on web technologies and robotics.</p>
+          </div>
+        </div>
+        <div class="educacion-entry">
+          <div class="edu-photo">
+            <img src="images/bootcamp_logo.png" alt="Bootcamp Logo">
+          </div>
+          <div class="edu-content">
+            <div class="edu-header">
+              <span class="edu-title">Web Development Bootcamp</span>
+              <span class="edu-org">CodeAcademy</span>
+              <span class="edu-date">2022</span>
+            </div>
+            <p>Full stack web development certification.</p>
+            <div class="edu-certlink">
+              <a href="https://certificados.codeacademy.com/12345" target="_blank">View Certificate</a>
+            </div>
+          </div>
+        </div>
+        <div class="educacion-entry">
+          <div class="edu-photo">
+            <img src="images/ai_logo.png" alt="AI Fundamentals Logo">
+          </div>
+          <div class="edu-content">
+            <div class="edu-header">
+              <span class="edu-title">AI Fundamentals</span>
+              <span class="edu-org">Coursera</span>
+              <span class="edu-date">2024</span>
+            </div>
+            <p>Completed an online course on artificial intelligence basics.</p>
+            <div class="edu-certlink">
+              <a href="https://coursera.org/verify/abcdefg" target="_blank">View Certificate</a>
+            </div>
+          </div>
+        </div>
+        <!-- Agrega más estudios/certificados aquí -->
+      </div>
+    </section>
+
+
+    <section class="block proyectos-block" id="proyectos">
+    <h2>Projects</h2>
+    <div class="projects-gallery">
+      <div class="project-card">
+        <div class="project-img" style="background-image: url('images/portfolio.jpg');"></div>
+        <div class="project-info">
+          <h3>Personal Portfolio</h3>
+          <p>Modern, technical personal website showcasing skills and projects.</p>
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="#" target="_blank">Live Site</a>
+            <a href="#" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-img" style="background-image: url('images/robotica.jpg');"></div>
+        <div class="project-info">
+          <h3>Robotics API</h3>
+          <p>RESTful API for managing robotics competitions and devices.</p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Flask</span>
+            <span class="tag">REST</span>
+          </div>
+          <div class="project-links">
+            <a href="#" target="_blank">Docs</a>
+            <a href="#" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+      <!-- Puedes añadir más proyectos -->
+    </div>
+    </section>
+    
+    <!-- Hackathons Projects Section -->
+    <section class="block hackathons-block" id="hackathons">
+      <h2>Hackathons & Competitions</h2>
+      <ul class="hackathons-list-simple">
+        <li>
+          <span class="hackathon-title-simple">AI Challenge (2024)</span>
+          <span class="hackathon-role-simple">Team Leader</span>
+          <span class="hackathon-techs-simple">Python, TensorFlow, React</span>
+          <span class="hackathon-comment-simple">Learned to coordinate a diverse team and work under pressure.</span>
+          <a href="#" class="hackathon-link-simple">GitHub</a>
+          <a href="#" class="hackathon-link-simple">Demo</a>
+        </li>
+        <li>
+          <span class="hackathon-title-simple">DevJam (2023)</span>
+          <span class="hackathon-role-simple">Frontend Developer</span>
+          <span class="hackathon-techs-simple">JavaScript, Socket.io, CSS</span>
+          <span class="hackathon-comment-simple">Improved my UI/UX and prototyping skills.</span>
+          <a href="#" class="hackathon-link-simple">GitHub</a>
+          <a href="#" class="hackathon-link-simple">Demo</a>
+        </li>
+        <li>
+          <span class="hackathon-title-simple">Robotics Hack MX (2022)</span>
+          <span class="hackathon-role-simple">Full Stack Developer</span>
+          <span class="hackathon-techs-simple">Node.js, IoT, Vue.js</span>
+          <span class="hackathon-comment-simple">Faced technical challenges and learned troubleshooting.</span>
+          <a href="#" class="hackathon-link-simple">GitHub</a>
+          <a href="#" class="hackathon-link-simple">Demo</a>
+        </li>
+        <!-- Más hackathons si lo deseas -->
+      </ul>
+    </section>
+
+    <!-- Blog/Notes Section
+    <section class="block blog-block" id="blog">
+      <h2>Blog</h2>
+      <ul class="blog-list-simple">
+        <li>
+          <div class="blog-date-simple">September 10, 2023</div>
+          <div class="blog-title-simple">Is AI replacing human jobs? (my experience)</div>
+          <div class="blog-summary-simple">
+            As some may know, I just created my online avatar
+          </div>
+          <a href="#" class="blog-link-simple">Read Article &gt;</a>
+        </li>
+        <li>
+          <div class="blog-date-simple">August 20, 2023</div>
+          <div class="blog-title-simple">How would I learn to code (if I had to start over again)</div>
+          <div class="blog-summary-simple">
+            The power to create something from scratch, armed with just a laptop, an internet connection, and lines of code, If I could embark on this journey anew, here's how I would go about it.
+          </div>
+          <a href="#" class="blog-link-simple">Read Article &gt;</a>
+        </li>
+        <! Agrega más artículos aquí
+      </ul>
+    </section> -->
+
+    <!-- Contact Section -->
+    <section class="block contacto-block" id="contacto">
+      <h2>Contact</h2>
+      <div class="contact-minimal">
+        <a href="mailto:valentechie@email.com" class="contact-email-minimal">valentechie@email.com</a>
+        <div class="contact-text-minimal">
+          I’m open to collaborations, questions, or just a friendly hello. I usually reply promptly!
+        </div>
+        <a href="mailto:valentechie@email.com" class="contact-btn-minimal">Send Email</a>
+      </div>
+    </section>
+    
+  </main>
+  <footer>
+    <p>Diseñado con 🎵 y ❤️ por Valen</p>
+    <p>&copy; 2025 Valentechie</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
