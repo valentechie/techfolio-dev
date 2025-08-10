@@ -92,6 +92,171 @@ main {
 /*=====================================================================================*
 ========================================================================================/
 
+/* SECCION DE INICIO (LA DE HI VALENTECHIE) */
+.hero-main-card {
+  padding: 12px 10px 12px 10px;
+  max-width: 850px; /* ancho maximo*/
+  margin: 4px auto 0 auto;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.hero-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 36px;
+}
+
+.hero-title {
+  font-size: 2.5em;
+  font-weight: 900;
+  color: #FF4E88;
+  margin: 0 0 20px 0;
+  display: flex;
+  align-items: center;
+}
+
+.hero-badge {
+  margin-bottom: 12px;
+}
+
+.badge-opportunities {
+  display: inline-block;
+  background: linear-gradient(90deg, #78C841 60%, #8ABB6C 100%);
+  color: #fff;
+  font-size: 1em;
+  font-weight: 700;
+  padding: 6px 18px;
+  border-radius: 12px;
+  letter-spacing: 0.03em;
+  box-shadow: 0 1px 10px rgba(201, 12, 12, 0.133);
+  margin-bottom: 10px;
+  margin-top: 2px;
+  animation: badgePulse 2.4s infinite;
+}
+
+@keyframes badgePulse {
+  0% { box-shadow: 0 1px 10px #4da7ff22;}
+  50% { box-shadow: 0 2px 16px #84f96d55;}
+  100% { box-shadow: 0 1px 10px #4da7ff22;}
+}
+
+.hero-subtitle {
+  color: var(--primary);
+  font-size: 1.09em;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.hero-intro {
+  color: var(--text);
+  font-size: 1.09em;
+  margin-bottom: 22px;
+  margin-top: 2px;
+}
+
+.hero-actions {
+  margin-top: 35px;
+  margin-bottom: 1px;
+}
+
+/* Cajita de cv */
+.hero-cv-btn {
+  display: inline-flex;
+  align-items: center;
+  background: var(--primary);
+  color: #fff;
+  font-weight: 700;
+  border-radius: 8px;
+  padding: 10px 22px;
+  font-size: 1.07em;
+  text-decoration: none;
+  box-shadow: 0 2px 10px #0001;
+  transition: background 0.18s, color 0.18s;
+  border: none;
+  gap: 8px;
+}
+
+.hero-cv-btn:hover {
+  background: #FF4E88;
+  color: #fff;
+}
+
+.cv-icon {
+  font-size: 1.18em;
+}
+
+.hero-info {
+  padding-left: 20px;   /* Separación del borde izquierdo */
+}
+
+/* foto de perfil */
+.hero-photo-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.hero-photo {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  background: #fff;
+  /* Aquí puedes poner la imagen real: background-image: url('ruta/a/tu-foto.jpg'); background-size: cover;*/
+  background-image: url('media/photo.jpeg');
+  background-size: cover;
+  margin-right: 22px;
+}
+
+.hero-about-card {
+  border: 1px solid #b8c1d4;
+  background: none;
+  border-radius: 15px;
+  margin-top: 36px;
+  padding: 22px 20px;
+}
+
+.hero-about-title {
+  font-weight: 700;
+  color: var(--text);
+  font-size: 1.08em;
+  margin-bottom: 8px;
+}
+
+.hero-about-text {
+  color: var(--text-secondary);
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+@media (max-width: 700px) {
+  .hero-main-card {
+    padding: 18px 4px 12px 4px;
+    max-width: 98vw;
+  }
+  .hero-row {
+    flex-direction: column;
+    gap: 18px;
+  }
+  .hero-title {
+    font-size: 1.42em;
+  }
+  .hero-photo {
+    width: 80px;
+    height: 80px;
+  }
+  .hero-about-card {
+    padding: 12px 6px;
+    margin-top: 20px;
+  }
+}
+
+/*=====================================================================================*
+========================================================================================/
+
 /* Bloques generales para Projects, Notes, Contact, Experience, Hackathons */
 .block {
   background: var(--block-bg);
@@ -685,180 +850,3 @@ footer {
   }
 }
 
-/* SECCION DE INICIO (LA DE HI VALENTECHIE) */
-.hero-main-card {
-  padding: 18px 5px 12px 5px;
-  max-width: 850px;
-  margin: 4px auto 0 auto;
-  box-sizing: border-box;
-  position: relative;
-}
-
-.hero-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 36px;
-}
-
-.hero-title {
-  font-size: 2.5em;
-  font-weight: 900;
-  color: #F9FAFC;
-  margin: 0 0 8px 0;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.hero-wave {
-  font-size: 1em;
-  animation: wave-hand 1.9s infinite;
-  display: inline-block;
-}
-
-.hero-badge {
-  margin-bottom: 12px;
-}
-.badge-opportunities {
-  display: inline-block;
-  background: linear-gradient(90deg, #4da7ff 60%, #F96D80 100%);
-  color: #fff;
-  font-size: 1em;
-  font-weight: 700;
-  padding: 6px 18px;
-  border-radius: 12px;
-  letter-spacing: 0.03em;
-  box-shadow: 0 1px 10px #0002;
-  margin-bottom: 10px;
-  margin-top: 2px;
-  animation: badgePulse 2.4s infinite;
-}
-@keyframes badgePulse {
-  0% { box-shadow: 0 1px 10px #4da7ff22;}
-  50% { box-shadow: 0 2px 16px #F96D8055;}
-  100% { box-shadow: 0 1px 10px #4da7ff22;}
-}
-
-.hero-subtitle {
-  color: #b8c1d4;
-  font-size: 1.09em;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.hero-intro {
-  color: #e6e7ea;
-  font-size: 1.09em;
-  margin-bottom: 22px;
-  margin-top: 2px;
-}
-
-.hero-emoji {
-  font-size: 1.18em;
-}
-
-.hero-actions {
-  margin-bottom: 8px;
-}
-
-.hero-cv-btn {
-  display: inline-flex;
-  align-items: center;
-  background: var(--primary);
-  color: #fff;
-  font-weight: 700;
-  border-radius: 8px;
-  padding: 10px 22px;
-  font-size: 1.07em;
-  text-decoration: none;
-  box-shadow: 0 2px 10px #0001;
-  transition: background 0.18s, color 0.18s;
-  border: none;
-  gap: 8px;
-}
-
-.hero-cv-btn:hover {
-  background: var(--accent-pink);
-  color: #232a36;
-}
-
-.cv-icon {
-  font-size: 1.18em;
-}
-
-.hero-photo-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  margin-top: 8px;
-}
-.hero-photo-label {
-  color: #b8c1d4;
-  font-size: 0.97em;
-  margin-bottom: 4px;
-}
-.hero-photo {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  background: #fff;
-  border: 2px solid #b8c1d4;
-  box-shadow: 0 2px 12px #0001;
-  /* Aquí puedes poner la imagen real: background-image: url('ruta/a/tu-foto.jpg'); background-size: cover;*/
-  background-image: url('photos/perfil.jpeg');
-  background-size: cover;
-}
-
-.hero-about-card {
-  border: 2px solid #b8c1d4;
-  background: none;
-  border-radius: 15px;
-  margin-top: 36px;
-  padding: 22px 20px;
-}
-
-.hero-about-title {
-  font-weight: 700;
-  color: #fff;
-  font-size: 1.08em;
-  margin-bottom: 8px;
-}
-
-.hero-about-text {
-  color: #e6e7ea;
-  font-size: 1em;
-  line-height: 1.5;
-}
-
-.hero-about-text a {
-  color: #4da7ff;
-  text-decoration: underline;
-  transition: color 0.18s;
-}
-.hero-about-text a:hover {
-  color: var(--accent-pink);
-}
-
-@media (max-width: 700px) {
-  .hero-main-card {
-    padding: 18px 4px 12px 4px;
-    max-width: 98vw;
-  }
-  .hero-row {
-    flex-direction: column;
-    gap: 18px;
-  }
-  .hero-title {
-    font-size: 1.42em;
-  }
-  .hero-photo {
-    width: 80px;
-    height: 80px;
-  }
-  .hero-about-card {
-    padding: 12px 6px;
-    margin-top: 20px;
-  }
-}
