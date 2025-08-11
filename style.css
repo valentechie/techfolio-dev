@@ -6,7 +6,7 @@
   --border: 1.5px solid #E4E9EF;
   --text: #232a36;           /* Texto principal */
   --text-secondary: #4A4E57; /* Texto secundario */
-  --accent-pink: #F78DA7;    /* Rosa acento */
+  --accent-pink: #FF4E88;    /* Rosa acento */
   --accent-green: #7ED6A5;   /* Verde acento */
   --accent-gold: #FFD600;    /* Amarillo acento */
   --dark-detail: #E1E5EA;    /* Detalle/fondo hover */
@@ -111,7 +111,7 @@ main {
 .hero-title {
   font-size: 2.5em;
   font-weight: 900;
-  color: #FF4E88;
+  color: var(--accent-pink);
   margin: 0 0 20px 0;
   display: flex;
   align-items: center;
@@ -222,7 +222,7 @@ main {
 .hero-about-title {
   font-weight: 700;
   color: var(--text);
-  font-size: 1.08em;
+  font-size: 1.5em;
   margin-bottom: 8px;
 }
 
@@ -264,13 +264,6 @@ main {
   border: var(--border);
   padding: 30px 20px;
   margin-bottom: 22px;
-}
-
-.block h3 {
-  font-size: 1.18em;
-  font-weight: 600;
-  margin-bottom: 16px;
-  color: var(--text);
 }
 
 .notes-list, .experience-list, .hackathons-list {
@@ -339,10 +332,10 @@ main {
 footer {
   text-align: center;
   padding: 20px;
-  color: #fff;
+  color: var(--text-secondary);
   background: var(--dark-detail);
   margin-top: 40px;
-  border-top: 1px solid #394052;
+ 
 }
 
 @media (max-width: 700px) {
@@ -360,7 +353,17 @@ footer {
   }
 }
 
+/*=====================================================================================*
+========================================================================================/
+
 /*PARA LO DE ESPACIO PERSONAL */
+.personal-block h2 {
+  font-size: 1.5em;    /* Puedes aumentar o reducir este valor */
+  
+  color: var(--text);      /* Opcional: cambia el color si quieres */
+  margin-bottom: 24px; /* Opcional: separa más el título del contenido */
+}
+
 .hobbies-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -375,13 +378,13 @@ footer {
   border: var(--border);
   box-shadow: 0 2px 12px #1a1a1a26;
   transition: transform 0.2s, box-shadow 0.2s;
-  background: #232a36;
+  background: #ffffff;
 }
 
 .hobby-photo img {
   display: block;
   width: 100%;
-  height: 110px;
+  height: 200px; 
   object-fit: cover;
   border-radius: 18px 18px 0 0;
   transition: transform 0.2s;
@@ -392,7 +395,7 @@ footer {
   bottom: 8px;
   left: 0;
   right: 0;
-  background: rgba(74, 144, 226, 0.88);
+  background: var(--accent-pink);
   color: #fff;
   font-weight: 600;
   font-size: 1em;
@@ -419,7 +422,7 @@ footer {
     gap: 14px;
   }
   .hobby-photo img {
-    height: 80px;
+    height: 120px;
   }
   .hobby-label {
     font-size: 0.96em;
