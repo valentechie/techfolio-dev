@@ -212,11 +212,7 @@ main {
 }
 
 .hero-about-card {
-  border: 1px solid #b8c1d4;
-  background: none;
-  border-radius: 15px;
-  margin-top: 36px;
-  padding: 22px 20px;
+  margin-top: 40px;
 }
 
 .hero-about-title {
@@ -310,8 +306,6 @@ main {
   margin-bottom: 14px;
   color: #b8c1d4;
 }
-
-
 
 footer {
   text-align: center;
@@ -412,6 +406,65 @@ footer {
     font-size: 0.96em;
   }
 }
+
+/*=====================================================================================*
+========================================================================================/
+
+/* APARTADO EXPERIENCIA */
+
+.experiencia-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 16px;
+  position: relative;
+  padding-left: 12px;
+}
+
+.experiencia-entry {
+  position: relative;
+  padding-left: 24px;
+  border-left: 3px solid var(--primary);
+  margin-bottom: 10px;
+}
+
+.experiencia-entry:last-child {
+  border-left: none;
+}
+
+.exp-header {
+  display: flex;
+  gap: 12px;
+  align-items: baseline;
+  margin-bottom: 4px;
+}
+
+.exp-role {
+  font-weight: 600;
+  color: var(--accent-pink);
+}
+
+.exp-type {
+  background: var(--accent-green);
+  color: #232a36;
+  font-size: 0.95em;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 2px 10px;
+}
+
+.exp-date {
+  font-size: 0.96em;
+  color: #b8c1d4;
+}
+
+.experiencia-entry p {
+  color: #b8c1d4;
+  margin: 4px 0 0 0;
+}
+
+/*=====================================================================================*
+========================================================================================/
 
 /* SECCION PROYECTOS */
 
@@ -516,54 +569,7 @@ footer {
   }
 }
 
-/* APARTADO EXPERIENCIA */
 
-.experiencia-timeline {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-  margin-top: 16px;
-  position: relative;
-  padding-left: 12px;
-}
-
-.experiencia-entry {
-  position: relative;
-  padding-left: 24px;
-  border-left: 3px solid var(--primary);
-  margin-bottom: 10px;
-}
-.experiencia-entry:last-child {
-  border-left: none;
-}
-
-.exp-header {
-  display: flex;
-  gap: 12px;
-  align-items: baseline;
-  margin-bottom: 4px;
-}
-.exp-role {
-  font-weight: 600;
-  color: var(--accent-pink);
-}
-.exp-type {
-  background: var(--accent-green);
-  color: #232a36;
-  font-size: 0.95em;
-  font-weight: 600;
-  border-radius: 8px;
-  padding: 2px 10px;
-}
-.exp-date {
-  font-size: 0.96em;
-  color: #b8c1d4;
-}
-
-.experiencia-entry p {
-  color: #b8c1d4;
-  margin: 4px 0 0 0;
-}
 
 /* APARTADO EDUCACION */
 .educacion-list {
