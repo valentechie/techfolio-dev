@@ -206,7 +206,7 @@ main {
   border-radius: 50%;
   background: #fff;
   /* Aquí puedes poner la imagen real: background-image: url('ruta/a/tu-foto.jpg'); background-size: cover;*/
-  background-image: url('media/photo.jpeg');
+  background-image: url('media/photo.png');
   background-size: cover;
   margin-right: 22px;
 }
@@ -266,26 +266,26 @@ main {
   margin-bottom: 22px;
 }
 
-.notes-list, .experience-list, .hackathons-list {
+.experience-list, .hackathons-list {
   display: flex;
   flex-direction: column;
   gap: 18px;
 }
 
-.note-item, .experience-item, .hackathon-item {
+.experience-item, .hackathon-item {
   background: none;
   border: none;
   padding: 0;
   margin: 0;
 }
 
-.note-item h4, .experience-item h4, .hackathon-item h4 {
+.experience-item h4, .hackathon-item h4 {
   font-size: 1.08em;
   margin: 0 0 5px 0;
   color: var(--primary);
 }
 
-.note-item p, .experience-item p, .hackathon-item p {
+.experience-item p, .hackathon-item p {
   margin: 0;
   color: #b8c1d4;
 }
@@ -296,13 +296,13 @@ main {
   margin-left: 0.5em;
 }
 
-.note-item a, .hackathon-item a {
+.hackathon-item a {
   color: var(--accent-pink);
   text-decoration: underline;
   font-weight: 500;
   transition: color 0.2s;
 }
-.note-item a:hover, .hackathon-item a:hover {
+.hackathon-item a:hover {
   color: var(--primary);
 }
 
@@ -311,23 +311,7 @@ main {
   color: #b8c1d4;
 }
 
-.social-links {
-  margin: 10px 0;
-  display: flex;
-  justify-content: flex-start;
-  gap: 15px;
-}
 
-.social-links img {
-  width: 32px;
-  height: 32px;
-  filter: grayscale(0.5);
-  transition: filter 0.2s, transform 0.2s;
-}
-.social-links img:hover {
-  filter: none;
-  transform: scale(1.1);
-}
 
 footer {
   text-align: center;
@@ -392,18 +376,18 @@ footer {
 
 .hobby-label {
   position: absolute;
-  bottom: 8px;
+  bottom: 15px;
   left: 0;
   right: 0;
-  background: var(--accent-pink);
-  color: #fff;
+  background-color: #ffffff80; /* Rojo con 50% de opacidad */
+  color: var(--primary);
   font-weight: 600;
   font-size: 1em;
   padding: 6px 0;
   text-align: center;
-  border-radius: 0 0 16px 16px;
+  border-radius: 0 0 1px 1px;
   letter-spacing: 0.02em;
-  box-shadow: 0 2px 8px #0003;
+  
 }
 
 .hobby-photo:hover {
