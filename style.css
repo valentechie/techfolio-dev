@@ -337,7 +337,6 @@ footer {
 /*PARA LO DE ESPACIO PERSONAL */
 .personal-block h2 {
   font-size: 1.5em;    /* Puedes aumentar o reducir este valor */
-  
   color: var(--text);      /* Opcional: cambia el color si quieres */
   margin-bottom: 24px; /* Opcional: separa más el título del contenido */
 }
@@ -407,8 +406,8 @@ footer {
   }
 }
 
-/*=====================================================================================*
-========================================================================================/
+/*=====================================================================================
+========================================================================================*/
 
 /* APARTADO EXPERIENCIA */
 
@@ -463,8 +462,121 @@ footer {
   margin: 4px 0 0 0;
 }
 
-/*=====================================================================================*
-========================================================================================/
+/*=====================================================================================
+========================================================================================*/
+
+
+/* APARTADO EDUCACION */
+.educacion-list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  margin-top: 16px;
+}
+
+.educacion-entry {
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+  border-left: 3px solid var(--accent-pink);
+  padding-left: 16px;
+  margin-bottom: 10px;
+  background: none;
+  border: none;
+}
+
+.edu-photo {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: var(--border);
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edu-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.edu-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.edu-header {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+  margin-bottom: 4px;
+  flex-wrap: wrap;
+}
+
+.edu-title {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.edu-org {
+  background: var(--block-bg);
+  color: var(--accent-green);
+  font-size: 0.95em;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 2px 10px;
+}
+
+.edu-date {
+  font-size: 0.96em;
+  color: #b8c1d4;
+}
+
+.edu-content p {
+  color: #b8c1d4;
+  margin: 2px 0 0 0;
+}
+
+.edu-certlink {
+  margin-top: 4px;
+}
+
+.edu-certlink a {
+  color: var(--accent-pink);
+  font-weight: 600;
+  text-decoration: underline;
+  font-size: 0.98em;
+  transition: color 0.18s;
+}
+
+.edu-certlink a:hover {
+  color: var(--primary);
+}
+
+@media (max-width: 700px) {
+  .educacion-entry {
+    flex-direction: column;
+    gap: 12px;
+    padding-left: 0;
+    border-left: none;
+    border-top: 3px solid var(--accent-pink);
+    padding-top: 10px;
+  }
+  .edu-photo {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+/*=====================================================================================
+========================================================================================*/
 
 /* SECCION PROYECTOS */
 
@@ -571,102 +683,6 @@ footer {
 
 
 
-/* APARTADO EDUCACION */
-.educacion-list {
-  display: flex;
-  flex-direction: column;
-  gap: 22px;
-  margin-top: 16px;
-}
-.educacion-entry {
-  display: flex;
-  align-items: flex-start;
-  gap: 22px;
-  border-left: 3px solid var(--accent-pink);
-  padding-left: 16px;
-  margin-bottom: 10px;
-  background: none;
-  border: none;
-}
-.edu-photo {
-  flex-shrink: 0;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  overflow: hidden;
-  border: var(--border);
-  background: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.edu-photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50%;
-}
-.edu-content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-.edu-header {
-  display: flex;
-  gap: 10px;
-  align-items: baseline;
-  margin-bottom: 4px;
-  flex-wrap: wrap;
-}
-.edu-title {
-  font-weight: 600;
-  color: var(--primary);
-}
-.edu-org {
-  background: var(--block-bg);
-  color: var(--accent-green);
-  font-size: 0.95em;
-  font-weight: 600;
-  border-radius: 8px;
-  padding: 2px 10px;
-}
-.edu-date {
-  font-size: 0.96em;
-  color: #b8c1d4;
-}
-.edu-content p {
-  color: #b8c1d4;
-  margin: 2px 0 0 0;
-}
-.edu-certlink {
-  margin-top: 4px;
-}
-.edu-certlink a {
-  color: var(--accent-pink);
-  font-weight: 600;
-  text-decoration: underline;
-  font-size: 0.98em;
-  transition: color 0.18s;
-}
-.edu-certlink a:hover {
-  color: var(--primary);
-}
-
-@media (max-width: 700px) {
-  .educacion-entry {
-    flex-direction: column;
-    gap: 12px;
-    padding-left: 0;
-    border-left: none;
-    border-top: 3px solid var(--accent-pink);
-    padding-top: 10px;
-  }
-  .edu-photo {
-    width: 48px;
-    height: 48px;
-  }
-}
 
 /* APARTADO DE HACKATHONS */
 
