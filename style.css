@@ -575,6 +575,89 @@ footer {
   }
 }
 
+.badges-row {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.badge {
+  background: #232a34;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px #0001;
+  padding: 10px 8px 8px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 138px;
+  min-width: 108px;
+  max-width: 150px;
+  text-align: center;
+  transition: transform 0.16s, box-shadow 0.16s;
+}
+
+.badge:hover {
+  transform: scale(1.04);
+  box-shadow: 0 4px 16px #4da7ff22;
+}
+
+.badge img {
+  width: 34px;
+  height: 34px;
+  margin-bottom: 7px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.badge-title {
+  font-size: 0.98em;
+  font-weight: 700;
+  color: #f9fafc;
+  margin-bottom: 4px;
+  margin-top: 1px;
+}
+
+.badge-company {
+  font-size: 0.92em;
+  color: #b8c1d4;
+  margin-bottom: 2px;
+}
+
+.badge-date {
+  font-size: 0.88em;
+  color: #8fa6c7;
+  font-weight: 500;
+}
+
+@media (max-width: 700px) {
+  .badges-row {
+    gap: 8px;
+  }
+  .badge {
+    width: 45vw;
+    min-width: unset;
+    max-width: unset;
+    padding: 8px 2px 6px 2px;
+  }
+  .badge img {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 3px;
+  }
+  .badge-title {
+    font-size: 0.89em;
+  }
+  .badge-company {
+    font-size: 0.85em;
+  }
+  .badge-date {
+    font-size: 0.78em;
+  }
+}
 /*=====================================================================================
 ========================================================================================*/
 
