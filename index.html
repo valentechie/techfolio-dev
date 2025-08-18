@@ -1,442 +1,379 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Valentechie | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Valentechie | Portfolio</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- Top icon bar -->
   <nav class="icon-bar">
     <!-- Icon of home -->
-    <a href="#top" title="Home">
-      <img src="media/iconos/home.png" alt="Home">
-    </a>
+      <a href="#top" title="Home">
+        <img src="media/iconos/home.png" alt="Home">
+      </a>
 
-    <!-- Icon of GitHUb -->
-    <a href="https://github.com/valentechie" target="_blank" title="GitHub">
-      <img src="media/iconos/github.png" alt="GitHub">
-    </a>
+      <!-- Icon of GitHUb -->
+      <a href="https://github.com/valentechie" target="_blank" title="GitHub">
+        <img src="media/iconos/github.png" alt="GitHub">
+      </a>
 
-    <!-- Icon of Linkedin -->
-    <a href="https://www.linkedin.com/in/valentina-arminta" target="_blank" title="LinkedIn">
-      <img src="media/iconos/linkedin.png" alt="LinkedIn">
-    </a>
+      <!-- Icon of Linkedin -->
+      <a href="https://www.linkedin.com/in/valentina-arminta" target="_blank" title="LinkedIn">
+        <img src="media/iconos/linkedin.png" alt="LinkedIn">
+      </a>
 
-    <!-- Icon of Youtube -->
-    <a href="https://www.youtube.com/?app=desktop&hl=es" target="_blank" title="YouTube">
-      <img src="media/iconos/youtube.png" alt="YouTube">
-    </a>
+      <!-- Icon of Youtube -->
+      <a href="https://www.youtube.com/?app=desktop&hl=es" target="_blank" title="YouTube">
+        <img src="media/iconos/youtube.png" alt="YouTube">
+      </a>
 
-    <!-- Icon of Dark side -->
-    <a href="#" id="toggle-dark" title="dark mode">
-      <img src="media/iconos/dark_mode.png" alt="dark mode">
-    </a>
+      <!-- Icon of Dark side -->
+      <a href="#" id="toggle-dark" title="dark mode">
+        <img src="media/iconos/dark_mode.png" alt="dark mode">
+      </a>
   </nav>
 
-<!--===============================================================================================-->
 
-  <!-- main section (Abput me) -->
-  <main>
-    <section class="block hero-block" id="inicio">
-      <div class="hero-main-card">
-        <div class="hero-row">
-          <div class="hero-info">
-            <h1 class="hero-title">
-              Hi, I'm Valentina 🤖💖
-            </h1>
-            <div class="hero-badge">
-              <span class="badge-opportunities">Open to opportunities</span>
-            </div>
-            <div class="hero-subtitle">Aspiring Robotic Software Engineer</div>
-            <p class="hero-intro">
-              <i>Training myself to lead tomorrow's technological change</i>
-            </p>
-            <div class="hero-actions">
-              <a href="media/cv.pdf" class="hero-cv-btn" download>
-                <span class="cv-icon">📄</span> Download CV
-              </a>
-            </div>
-          </div>
-          <div class="hero-photo-box">
-            <span class="hero-photo-label"></span>
-            <div class="hero-photo"></div>
-          </div>
+  <!-- Centered main container, limits the width of the content -->
+  <div class="container">
+    <!-- Main section type “hero” with presentation -->
+    <section class="hero">
+      <div class="hero-main">
+        <div class="hero-text">
+          <h1>Hi, I'm Valentina <span class="emoji">👋</span></h1>
+          <button class="open-opportunities">Open to Oportunities</button>
+                
+          <!-- Subtítulo con el rol profesional -->
+          <h2 class="role">Aspiring Robotic Software Engineer</h2>
+          <p class="subtitle">Training myself to lead tomorrow's technological change</p>
         </div>
-
-        <!-- Additional “About” card -->
-        <div class="hero-about-card">
-          <div class="hero-about-title">About</div>
-          <div class="hero-about-text">
-            I’m a university student with a heart wired for collaboration. Back in high school, I poured my energy into volunteering across Latin America, leading and supporting projects that left a mark on both communities and myself. Those experiences shaped my skills in project management, teamwork, and creative problem-solving.
-            <br><br>
-            Whether it’s building tech solutions, organizing events, or joining forces on ambitious ideas, I thrive in spaces where people come together to make something bigger than themselves. My goal? To keep learning, innovating, and sparking impact, one project at a time.
+            
+          <!-- Columna para la foto de perfil y el botón de CV -->
+        <div class="hero-profile">
+          <div class="profile-pic">
+            <img src="media/photo.png" alt="Profile picture">
           </div>
+              
+          <!-- Botón azul para descargar el CV -->
+          <a class="cv-button" href="media/cv.pdf" download>
+            <span class="cv-icon">📄</span> Download CV
+          </a>
         </div>
       </div>
     </section>
+      
+    <!-- Sección "About" con texto descriptivo -->
+    <section class="about">
+      <h2>About</h2>
+      <p>
+      I’m a university student with a heart wired for collaboration. Back in high school, I poured my energy into volunteering across Latin America, leading and supporting projects that left a mark on both communities and myself. Those experiences shaped my skills in project management, teamwork, and creative problem-solving.
+      </p>
+          
+      <p>
+      Whether it’s building tech solutions, organizing events, or joining forces on ambitious ideas, I thrive in spaces where people come together to make something bigger than themselves. My goal? To keep learning, innovating, and sparking impact, one project at a time.
+      </p>
+    </section>
 
-<!--===============================================================================================-->
-
-    <!-- Personal space (hobbies, photos) -->
-      <section class="block personal-block" id="personal">
+    <!-- Sección de hobbies/intereses -->
+    <section class="free-time">
+      <!-- Título principal de la sección -->
       <h2>In my free time</h2>
-      <div class="hobbies-gallery">
-        <div class="hobby-photo hobby-rubik">
-          <img src="media/hobbies/cubo_rubik.png" alt="Rubik">
-          <span class="hobby-label">Rubik's cube</span>
+      <!-- Contenedor de las tarjetas de hobbies -->
+      <div class="hobbies">
+        <div class="hobby-item">
+          <div class="hobby-card">
+            <img src="media/hobbies/cubo_rubik.png" alt="Rubik's cube" />
+          </div>
+          <p class="hobby-title">Rubik's cube</p>
         </div>
 
-        <div class="hobby-photo hobby-sudoku">
-          <img src="media/hobbies/sudoku.png" alt="Sudoku">
-          <span class="hobby-label">Sudoku</span>
+        <div class="hobby-item">
+          <div class="hobby-card">
+            <img src="media/hobbies/sudoku.png" alt="Sudoku" />
+          </div>
+          <p class="hobby-title">Sudoku</p>
         </div>
 
-        <div class="hobby-photo hobby-sketch">
-          <img src="media/hobbies/sketch.png" alt="Sketch">
-          <span class="hobby-label">Sketch</span>
+        <div class="hobby-item">
+          <div class="hobby-card">
+            <img src="media/hobbies/sketch.png" alt="Sketch" />
+          </div>
+          <p class="hobby-title">Sketch</p>
         </div>
 
-        <div class="hobby-photo hobby-lettering">
-          <img src="media/hobbies/lettering.jpg" alt="Lettering">
-          <span class="hobby-label">Lettering</span>
+        <div class="hobby-item">
+          <div class="hobby-card">
+            <img src="media/hobbies/lettering.png" alt="Lettering" />
+          </div>
+          <p class="hobby-title">Lettering</p>
+        </div>
+      </div>
+    </section>
+    
+    
+    <!-- Sección de experiencia profesional/voluntariado -->
+    <section class="experience">
+      <!-- Título principal de la sección -->
+      <h2>Experience</h2>
+      <div class="exp-list">
+        <!-- Experiencia 1 -->
+        <div class="exp-item">
+          <!-- Fecha de la experiencia -->
+          <div class="exp-date">September 2024 – Present</div>
+          <div class="exp-main">
+            <div class="exp-row">
+              <span class="exp-role">Member</span>
+              <span class="exp-org">- Robotech</span>
+            </div>
+            <div class="exp-desc">
+              I learned about how the Zeus robotic hand project works and Together with other colleagues, I presented the importance of free software in our projects to the entire university community at the Feria de Cultura Libre
+            </div>
+          </div>
+        </div>
+
+        <!-- Experiencia 2 -->
+        <div class="exp-item">
+          <div class="exp-date">August 16, 2023</div>
+          <div class="exp-main">
+            <div class="exp-row">
+              <span class="exp-role">Panelist</span>
+              <span class="exp-org">- IMPacto - PMI Nuevo Cuyo</span>
+            </div>
+            <div class="exp-desc">
+              Host of the program “Together for Employability” and I contacted professionals in the field of employability, skills, and work
+            </div>
+          </div>
+        </div>
+
+        <!-- Experiencia 3 -->
+        <div class="exp-item">
+          <div class="exp-date">January – July 2023</div>
+          <div class="exp-main">
+            <div class="exp-row">
+              <span class="exp-role">Volunteer Math Teacher</span>
+              <span class="exp-org">- Colores de Alegría</span>
+            </div>
+            <div class="exp-desc">
+              I taught exercises and theory to more than ten children aged 9-11, Instruction in arithmetic, geometry, statistics, and algebra, Development of lesson plans and activities to engage students with the material and Adaptation of teaching methods to meet the needs of students
+            </div>
+          </div>
+        </div>
+
+        <!-- Experiencia 4 -->
+        <div class="exp-item">
+          <div class="exp-date">June 2021 - December 2023</div>
+          <div class="exp-main">
+            <div class="exp-row">
+              <span class="exp-role">Outstanding Volunteer</span>
+              <span class="exp-org">- Junior Achievement Alumni</span>
+            </div>
+            <div class="exp-desc">
+              Vicepresident, Coffee talk & Employability webinar event planning <br>
+              In the area of comunications & Marketing (2022): Development of posts for events and international days, In the area of projects and events (2021): Event planning, member of the Coffee Talks staff, Entrepreneurs 2.0 Forum, Path to Sustainable Innovation Forum, Gainer Day
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-<!--===============================================================================================-->
-
-  <!-- Experiencia -->
-  <section class="block experiencia-block" id="experiencia">
-    <h2>Experience</h2>
-    <div class="experiencia-timeline">
-      <!-- Robotech -->
-      <div class="experiencia-entry">
-        <div class="exp-header">
-          <span class="exp-role">Member</span>
-          <span class="exp-institutions">Robotech</span>
-          <span class="exp-date">September 2024 – Present</span>
+    <!-- Sección de educación -->
+    <section class="education">
+      <!-- Título principal de la sección -->
+      <h2>Education</h2>
+      <div class="edu-item">
+        <!-- Logo de la universidad -->
+        <div class="edu-logo">
+          <img src="media/logo_urjc.png" alt="University Logo">
         </div>
-        <ul class="exp-activities">
-          <li>I learned about how the Zeus robotic hand project works</li>
-          <li>Together with other colleagues, I presented the importance of free software in our projects to the entire university community at the Feria de Cultura Libre</li>
-        </ul>
-      </div>
-
-      <!-- Host -->
-      <div class="experiencia-entry">
-        <div class="exp-header">
-          <span class="exp-role">Panelist</span>
-          <span class="exp-institutions">IMPacto - PMI Nuevo Cuyo</span>
-          <span class="exp-date">August 16, 2023</span>
-        </div>
-        <ul class="exp-activities">
-          <li>Host of the program “Together for Employability”</li>
-          <li>I contacted professionals in the field of employability, skills, and work</li>
-        </ul>
-      </div>
-
-      <!-- Volunteer Math Teacher  -->
-      <div class="experiencia-entry">
-        <div class="exp-header">
-          <span class="exp-role">Volunteer Math Teacher</span>
-          <span class="exp-institutions">Colores de Alegría</span>
-          <span class="exp-date">January – July 2023</span>
-        </div>
-        <ul class="exp-activities">
-          <li>I taught exercises and theory to more than ten children aged 9-11</li>
-          <li>Instruction in arithmetic, geometry, statistics, and algebra</li>
-          <li>Development of lesson plans and activities to engage students with the material</li>
-          <li>Adaptation of teaching methods to meet the needs of students</li>
-        </ul>
-      </div>
-
-      <!-- Ambassador ICP  -->
-      <div class="experiencia-entry">
-        <div class="exp-header">
-          <span class="exp-role">Ambassador & Creator</span>
-          <span class="exp-institutions">Interact Club Pachacamac</span>
-          <span class="exp-date">January - August 2023</span>
-        </div>
-        <ul class="exp-activities">
-          <li>Volunteer on the Multimedia Committee</li>
-          <li>Creator of posts and stories for social media, support with club publications</li>
-          <li>ICP representative at RYLA event in Korea</li>
-        </ul>
-      </div>
-
-      <!-- JAPA volunteer -->
-      <div class="experiencia-entry">
-        <div class="exp-header">
-          <span class="exp-role">Outstanding Volunteer</span>
-          <span class="exp-institutions">Junior Achievement Perú Alumni</span>
-          <span class="exp-date">2021 - 2023</span>
-        </div>
-        <ul class="exp-activities">
-          <p>Vicepresident</p>
-          <li>Coffee talk & Employability webinar event planning</li>
-          <p>In the area of comunicatios & Marketing (2022):</p>
-          <li>Development of posts for events and international days</li>
-
-          <p>In the area of projects and events (2021):</p>
-          <li>Event planning, member of the Coffee Talks staff, Entrepreneurs 2.0 Forum, Path to Sustainable Innovation Forum, Gather Day</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!--===============================================================================================-->
-
-  <!-- Education & Certifications -->
-  <section class="block educacion-block" id="educacion">
-    <h2>Education</h2>
-      <div class="educacion-list">
-        <div class="educacion-entry">
-          <div class="edu-photo">
-            <img src="media/logo_urjc.png" alt="University Logo">
+            
+        <!-- Detalles de la carrera y universidad -->
+        <div class="edu-details">
+          <div class="edu-title-row">
+            <!-- Nombre de la carrera -->
+            <h3 class="edu-title">Robotic Software Engineering</h3>
+            <!-- Fechas de estudio -->
+            <span class="edu-date">September 2024 - Present</span>
           </div>
-          <div class="edu-content">
-            <div class="edu-header">
-              <span class="edu-title">Robotic Software Engineering</span>
-              <span class="edu-org">Rey Juan Carlos University</span>
-              <span class="edu-date">September 2024 - Present</span>
-            </div>
-            <p> </p>
+          <!-- Nombre de la universidad en verde -->
+          <div class="edu-place">Rey Juan Carlos University</div>
+            <!-- Descripción de la carrera -->
+            <p class="edu-desc">
+            Is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', sometimes on purpose (injected humour and the like).
+            </p>
           </div>
-        </div>
-
-        <div class="educacion-entry">
-          <div class="edu-photo">
-            <img src="media/logo_trilce.png" alt="University Logo">
-          </div>
-          <div class="edu-content">
-            <div class="edu-header">
-              <span class="edu-title">High School</span>
-              <span class="edu-org">Trilce</span>
-              <span class="edu-date">Graduate 2022</span>
-            </div>
-            <p> </p>
-          </div>
-        </div>
-
-    <h2>Courses</h2>
-      <div class="educacion-list">
-        <div class="educacion-entry">
-          <div class="edu-content">
-            <div class="edu-header">
-              <span class="edu-title">Arduino Quest</span>
-              <span class="edu-org">Niñas PRO</span>
-              <span class="edu-date">July - August 2023</span>
-            </div>
-            <p>I developed two projects with the actual kit, applying perseverance, punctuality, and self-learning</p>
-            <div class="edu-certlink">
-              <a href="https://certificados.codeacademy.com/12345" target="_blank">View Certificate</a>
-            </div>
-            <div class="edu-certlink">
-              <a href="https://certificados.codeacademy.com/12345" target="_blank">View Project</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="educacion-entry">
-          <div class="edu-content">
-            <div class="edu-header">
-              <span class="edu-title">Edición BeeReal - Otoño</span>
-              <span class="edu-org">Club Chicas Programadoras</span>
-              <span class="edu-date">May - August 2023</span>
-            </div>
-            <p>I made a web calculator with HTML, CSS, and JavaScript</p>
-            <div class="edu-certlink">
-              <a href="https://certificados.codeacademy.com/12345" target="_blank">View Certificate</a>
-            </div>
-            <div class="edu-certlink">
-              <a href="https://certificados.codeacademy.com/12345" target="_blank">View Project</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="educacion-entry">
-          <div class="edu-content">
-            <div class="edu-header">
-              <span class="edu-title">Gestión de proyectos </span>
-              <span class="edu-org">PMI</span>
-              <span class="edu-date"></span>
-            </div>
-            <p>Curso organizado por el Programa Sacha del PMI Capitulo Perú en el cuál simulamos el desarrollo de un proyecto con la metodología del PMI</p>
-            <div class="edu-certlink">
-              <a href="https://certificados.codeacademy.com/12345" target="_blank">View Certificate</a>
-            </div>
-            <div class="edu-certlink">
-              <a href="https://certificados.codeacademy.com/12345" target="_blank">View Project</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="educacion-entry">
-          <div class="edu-content">
-            <div class="edu-header">
-              <span class="edu-title">Diseño Gráfico</span>
-              <span class="edu-org">SistemasUNI</span>
-              <span class="edu-date"></span>
-            </div>
-            <p>Conocimientos adquiridos: Corel Draw Basic, Corel Draw Expert, Illustrator, Photoshop Basic</p>
-            <div class="edu-certlink">
-              <a href="https://certificados.codeacademy.com/12345" target="_blank">View Certificate</a>
-            </div>
-            <div class="edu-certlink">
-              <a href="https://certificados.codeacademy.com/12345" target="_blank">View Project</a>
-            </div>
-          </div>
-        </div>
-
-    <h2>Certifications</h2>
-      <div class="educacion-entry">
-        <div class="edu-photo">
-          <img src="images/bootcamp_logo.png" alt="Bootcamp Logo">
-        </div>
-        <div class="edu-content">
-          <div class="edu-header">
-            <span class="edu-title">Web Development Bootcamp</span>
-            <span class="edu-org">CodeAcademy</span>
-            <span class="edu-date">2022</span>
-          </div>
-          <p>Full stack web development certification.</p>
-          <div class="edu-certlink">
-            <a href="https://certificados.codeacademy.com/12345" target="_blank">View Certificate</a>
-          </div>
-        </div>
-      </div>
-      <div class="educacion-entry">
-        <div class="edu-photo">
-          <img src="images/ai_logo.png" alt="AI Fundamentals Logo">
-        </div>
-        <div class="edu-content">
-          <div class="edu-header">
-            <span class="edu-title">AI Fundamentals</span>
-            <span class="edu-org">Coursera</span>
-            <span class="edu-date">2024</span>
-          </div>
-          <p>Completed an online course on artificial intelligence basics.</p>
-          <div class="edu-certlink">
-            <a href="https://coursera.org/verify/abcdefg" target="_blank">View Certificate</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Badges -->
-    <div class="badges-row">
-      <div class="badge">
-        <img src="a2e-essentials.png" alt="A2E Essentials">
-        <div class="badge-title">Ability to Execute (A2E) Essentials</div>
-        <div class="badge-company">McKinsey &amp; Company</div>
-        <div class="badge-date">Jun 28, 2024</div>
-      </div>
-      <div class="badge">
-        <img src="kickoff-predictive.png" alt="Kickoff Predictive">
-        <div class="badge-title">Fundamentos de la Dirección de Proyectos Predictive</div>
-        <div class="badge-company">Project Management Institute</div>
-        <div class="badge-date">Apr 20, 2023</div>
-      </div>
-      <div class="badge">
-        <img src="cisco-iot.png" alt="Cisco IoT">
-        <div class="badge-title">Introduction to IoT</div>
-        <div class="badge-company">Cisco</div>
-        <div class="badge-date">Oct 13, 2021</div>
-      </div>
-      <div class="badge">
-        <img src="tu-imagen.png" alt="Otra Certificación">
-        <div class="badge-title">II Hackathon URJC</div>
-        <div class="badge-company">Hackathon URJC</div>
-        <div class="badge-date">Apr 11, 2025</div>
-      </div>
-    </div>
-  </section>
-
-    <!--===============================================================================================-->
-
-    <!-- Projects -->
-    <section class="block proyectos-block" id="proyectos">
-    <h2>Projects</h2>
-    <div class="projects-gallery">
-      <div class="project-card">
-        <div class="project-img" style="background-image: url('images/portfolio.jpg');"></div>
-        <div class="project-info">
-          <h3>Personal Portfolio</h3>
-          <p>Modern, technical personal website showcasing skills and projects.</p>
-          <div class="project-tags">
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
-            <span class="tag">JavaScript</span>
-          </div>
-          <div class="project-links">
-            <a href="#" target="_blank">Live Site</a>
-            <a href="#" target="_blank">GitHub</a>
-          </div>
-        </div>
-      </div>
-      <div class="project-card">
-        <div class="project-img" style="background-image: url('images/robotica.jpg');"></div>
-        <div class="project-info">
-          <h3>Robotics API</h3>
-          <p>RESTful API for managing robotics competitions and devices.</p>
-          <div class="project-tags">
-            <span class="tag">Python</span>
-            <span class="tag">Flask</span>
-            <span class="tag">REST</span>
-          </div>
-          <div class="project-links">
-            <a href="#" target="_blank">Docs</a>
-            <a href="#" target="_blank">GitHub</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    </section> 
-    
-    <!-- Hackathons Projects Section 
-    <section class="block hackathons-block" id="hackathons">
-      <h2>Hackathons & Competitions</h2>
-      <ul class="hackathons-list-simple">
-        <li>
-          <span class="hackathon-title-simple">  </span>
-          <span class="hackathon-role-simple"> </span>
-          <span class="hackathon-techs-simple"> </span>
-          <span class="hackathon-comment-simple"></span>
-          <a href="#" class="hackathon-link-simple">GitHub</a>
-          <a href="#" class="hackathon-link-simple">Demo</a>
-        </li>
-        <li>
-          <span class="hackathon-title-simple"> </span>
-          <span class="hackathon-role-simple"> </span>
-          <span class="hackathon-techs-simple"></span>
-          <span class="hackathon-comment-simple"></span>
-          <a href="#" class="hackathon-link-simple">GitHub</a>
-          <a href="#" class="hackathon-link-simple">Demo</a>
-        </li>
-      </ul>
-    </section> -->
-
-    <!-- Contact Section -->
-    <section class="block contacto-block" id="contacto">
-      <h2>Contact</h2>
-      <div class="contact-minimal">
-        <a href="mailto:valentechie@email.com" class="contact-email-minimal">valentechie@email.com</a>
-        <div class="contact-text-minimal">
-          I’m open to collaborations, questions, or just a friendly hello. I usually reply promptly!
-        </div>
-        <a href="mailto:valentechie@email.com" class="contact-btn-minimal">Send Email</a>
       </div>
     </section>
-    
-  </main>
 
-  <footer>
-    <p>&copy; 2025 Valentina Arminta. All rights reserved.</p>
-    <p>Designed with 🎵 and ❤️ by valentechie</p>
+        
+    <!-- Sección de cursos -->
+    <section class="courses">
+      <!-- Título principal de la sección -->
+      <h2>Courses</h2>
+      <!-- Contenedor de las tarjetas de cursos -->
+      <div class="course-list">
+        <!-- Tarjeta de curso 1 -->
+        <div class="course-card">
+          <h3 class="course-title">Free OpenCV Bootcamp</h3>
+          <div class="course-place">OpenCV University</div>
+          <p class="course-desc">looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less</p>
+          <div class="course-links">
+            <a href="#" class="course-link">View Certificate</a>
+            <a href="#" class="course-link">View Project</a>
+          </div>
+        </div>
+
+        <!-- Tarjeta de curso 2 -->
+        <div class="course-card">
+          <h3 class="course-title">Edición BeeReal - Otoño</h3>
+          <div class="course-place">Club Chicas Programadoras</div>
+          <p class="course-desc">I made a web calculator with HTML, CSS, and JavaScript</p>
+          <div class="course-links">
+            <a href="#" class="course-link">View Certificate</a>
+            <a href="#" class="course-link">View Project</a>
+          </div>
+        </div>
+
+        <!-- Tarjeta de curso 3 -->
+        <div class="course-card">
+          <h3 class="course-title">Gestión de proyectos</h3>
+          <div class="course-place">Project Management Institute</div>
+          <p class="course-desc">I made a web calculator with HTML, CSS, and JavaScript</p>
+          <div class="course-links">
+            <a href="#" class="course-link">View Certificate</a>
+            <a href="#" class="course-link">View Project</a>
+          </div>
+        </div>
+
+        <!-- Tarjeta de curso 4 -->
+        <div class="course-card">
+          <h3 class="course-title">Diseño Gráfico</h3>
+          <div class="course-place">SistemasUNI</div>
+          <p class="course-desc">looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less</p>
+          <div class="course-links">
+            <a href="#" class="course-link">View Certificate</a>
+            <a href="#" class="course-link">View Project</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de certificaciones -->
+    <section class="certifications">
+      <!-- Título principal de la sección -->
+      <h2>Certifications</h2>
+      <!-- Lista de certificaciones principales -->
+      <div class="cert-main-list">
+
+        <!-- Certificación 1 -->
+        <div class="cert-main-item">
+          <div class="cert-main-logo"></div>
+          <div class="cert-main-details">
+            <div class="cert-main-title">Webinar : Brain Computer Interfaces</div>
+            <div class="cert-main-org">P4H Bionics Online Academy</div>
+          </div>
+          <div class="cert-main-meta">
+            <div class="cert-main-date">July 22, 2023</div>
+            <a href="#" class="cert-main-link">View Certificate</a>
+          </div>
+        </div>
+
+        <!-- Certificación 2 -->
+        <div class="cert-main-item">
+          <div class="cert-main-logo"></div>
+          <div class="cert-main-details">
+            <div class="cert-main-title">Entrepreneurial Skills Pass</div>
+            <div class="cert-main-org">Junior Achievement Europe</div>
+          </div>
+
+          <div class="cert-main-meta">
+            <div class="cert-main-date">September 25, 2021</div>
+            <a href="#" class="cert-main-link">View Certificate</a>
+          </div>
+        </div>
+
+        <!-- Certificación 3 -->
+        <div class="cert-main-item">
+          <div class="cert-main-logo"></div>
+          <div class="cert-main-details">
+            <div class="cert-main-title">Conferencia internacional cloud computing e inteligencia artificial</div>
+            <div class="cert-main-org">Escuela Global</div>
+          </div>
+
+          <div class="cert-main-meta">
+            <div class="cert-main-date">December 21, 2022</div>
+            <a href="#" class="cert-main-link">View Certificate</a>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Tarjetas de otras certificaciones -->
+      <div class="cert-card-list">
+        <!-- Tarjeta 1 -->
+        <div class="cert-card">
+          <img src="a2e.png" alt="A2E Essentials Logo" class="cert-card-img">
+          <div class="cert-card-title">Ability to Execute (A2E) Essentials</div>
+          <div class="cert-card-org">McKinsey & Company</div>
+          <div class="cert-card-date">Jun 28, 2024</div>
+        </div>
+
+        <!-- Tarjeta 2 -->
+        <div class="cert-card">
+          <img src="pm.png" alt="Predictive Projects Logo" class="cert-card-img">
+          <div class="cert-card-title">Fundamentos de la Dirección de Proyectos Predictive</div>
+          <div class="cert-card-org">Project Management Institute</div>
+          <div class="cert-card-date">Apr 20, 2023</div>
+        </div>
+
+        <!-- Tarjeta 3 -->
+        <div class="cert-card">
+          <img src="iot.png" alt="IoT Cisco Logo" class="cert-card-img">
+          <div class="cert-card-title">Introduction to IoT</div>
+          <div class="cert-card-org">Cisco</div>
+          <div class="cert-card-date">Oct 13, 2021</div>
+        </div>
+
+        <!-- Tarjeta 4 -->
+        <div class="cert-card">
+          <img src="hk.png" alt="Hackathon URJC Logo" class="cert-card-img">
+          <div class="cert-card-title">II Hackathon URJC</div>
+          <div class="cert-card-org">Hackathon URJC</div>
+          <div class="cert-card-date">Apr 11, 2025</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section class="contact">
+      <!-- Título principal de la sección -->
+      <h2>Get in touch</h2>
+      <div class="contact-row">
+        <!-- Imagen ilustrativa de contacto -->
+        <div class="contact-img">
+          <img src="media/footer.png" alt="Contact illustration">
+        </div>
+        <!-- Texto y botón de contacto -->
+        <div class="contact-details">
+          <!-- Mensaje de bienvenida a colaboraciones y preguntas -->
+          <p>I’m open to collaborations, questions, or just a friendly hello. I usually reply promptly!</p>
+          <!-- Botón para enviar email -->
+          <a href="mailto:your@email.com" class="contact-btn">
+            <span class="contact-btn-icon">📧</span> Send Email
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="contact-footer">
+    <div>
+      Copyright © 2025 Valentina Arminta. All rights reserved.
+    </div>
+    <div>
+      Designed with 🎵 and ❤️ by <span class="footer-author">valentechie</span>
+    </div>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
