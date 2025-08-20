@@ -1,4 +1,4 @@
-# 🌐 Personal Website — valentechie.dev
+# 🌐 Personal Website
 
 🚧 This personal website is currently a work in progress.
 
