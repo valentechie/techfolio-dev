@@ -240,7 +240,7 @@ h1 {
 .hobby-card {
   position: relative;
   border-radius: 18px;
-  border: 2px solid #e0d8f8;
+  border: 2px solid #e8e8e8;
   box-shadow: 0 2px 12px #1a1a1a26;
   transition: transform 0.2s, box-shadow 0.2s;
   background: #ffffff;
