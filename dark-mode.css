@@ -1,16 +1,25 @@
-/* Estilos para modo oscuro */
 body.dark-mode {
-  background-color: #121820;
-  color: #eee;
+  --color-bg: #181A1B;
+  --color-bg-secondary: #222;
+  --color-text: #e9ecef;
+  --color-text-secondary: #b2b6bb;
+  --color-accent: #ff6fa9;
+  --color-link: #8a7cdf;
+  --color-secondary: #ffd36e;
+  --color-border: #23272a;
+  background: var(--color-bg);
+  color: var(--color-text);
 }
 
-/* Ejemplo de estilos para títulos y enlaces en modo oscuro */
-body.dark-mode h1,
-body.dark-mode h2,
-body.dark-mode h3 {
-  color: #fff;
+/* Icon bar en modo oscuro */
+body.dark-mode .icon-bar {
+  background: var(--color-bg);
+  box-shadow: 0 2px 8px #0008;
 }
 
-body.dark-mode a {
-  color: #90caf9;
-}
+/* Iconos en modo oscuro */
+body.dark-mode .icon-home::after      { background-image: url('assets/modo-oscuro/2.png'); }
+body.dark-mode .icon-github::after    { background-image: url('assets/modo-oscuro/3.png'); }
+body.dark-mode .icon-linkedin::after  { background-image: url('assets/modo-oscuro/4.png'); }
+body.dark-mode .icon-youtube::after   { background-image: url('assets/modo-oscuro/5.png'); }
+body.dark-mode .icon-darkmode::after  { background-image: url('assets/modo-oscuro/6.png'); }
