@@ -548,7 +548,8 @@ body {
 
 /* Título principal de la sección */
 .certifications h2 {
-  font-size: 2rem;
+  font-size: var(--font-size-title);
+  color: var(--color-accent);
   font-weight: 700;
   text-align: left;
   margin-bottom: 30px;
@@ -587,15 +588,15 @@ body {
 
 /* Nombre del certificado, azul y negrita */
 .cert-main-title {
-  color: #4079e0;
+  color: var(--color-link);
   font-weight: 600;
-  font-size: 1.16rem;
+  font-size: 1.2rem;
   margin-bottom: 3px;
 }
 
 /* Organización, verde y negrita */
 .cert-main-org {
-  color: #2ad875;
+  color: var(--color-secondary);
   font-weight: 700;
   font-size: 1rem;
 }
@@ -617,7 +618,7 @@ body {
 
 /* Enlace para ver certificado, magenta y negrita */
 .cert-main-link {
-  color: #d020be;
+  color: var(--color-accent);
   font-weight: 600;
   text-decoration: none;
   font-size: 1rem;
@@ -625,6 +626,12 @@ body {
 }
 .cert-main-link:hover {
   text-decoration: underline;
+}
+
+.cert-main-desc {
+  font-size: var(--font-size);
+  color: var(--color-text);
+  line-height: 1.5;
 }
 
 /* Lista de tarjetas de certificaciones secundarias */
@@ -638,10 +645,10 @@ body {
 
 /* Tarjeta de certificación secundaria */
 .cert-card {
-  background: #F9FAFC;
+  background: var(--color-bg);
   border: 2px solid #e8e8e8;
   border-radius: 18px;
-  box-shadow: 0 4px 16px rgba(32, 32, 32, 0.07);
+  box-shadow: var(--box-shadow);
   padding: 28px 18px 16px 18px;
   width: 220px;
   display: flex;
@@ -660,7 +667,7 @@ body {
 /* Título del certificado, centrado y negrita */
 .cert-card-title {
   font-weight: 600;
-  color: #222;
+  color: var(--color-text);
   font-size: 1rem;
   text-align: center;
   margin-bottom: 4px;
@@ -668,9 +675,9 @@ body {
 
 /* Organización, verde y tamaño pequeño */
 .cert-card-org {
-  color: #2ad875;
+  color: var(--color-secondary);
   font-weight: 700;
-  font-size: 0.97rem;
+  font-size: 0.95rem;
   text-align: center;
   margin-bottom: 4px;
 }
@@ -679,26 +686,6 @@ body {
 .cert-card-date {
   color: #888;
   font-size: 0.95rem;
-}
-
-/* Responsive: tarjetas en columna en móviles */
-@media (max-width: 700px) {
-  .certifications {
-    padding: 0 8px;
-  }
-  .cert-card-list {
-    flex-direction: column;
-    gap: 18px;
-    align-items: center;
-  }
-  .cert-card {
-    width: 90vw;
-    max-width: 320px;
-  }
-  .cert-main-meta {
-    align-items: flex-start;
-    min-width: 100px;
-  }
 }
 
 /*===================================================*/
@@ -712,7 +699,8 @@ body {
 
 /* Título principal de la sección */
 .contact h2 {
-  font-size: 2rem;
+  font-size: var(--font-size-title);
+  color: var(--color-accent);
   font-weight: 700;
   margin-bottom: 30px;
 }

@@ -13,7 +13,7 @@ body.dark-mode {
 
 /* Icon bar en modo oscuro */
 body.dark-mode .icon-bar {
-  background: var(--color-bg);
+  background: var(--color-bg-secondary);
   box-shadow: 0 2px 8px #0008;
 }
 
@@ -23,3 +23,4 @@ body.dark-mode .icon-github::after    { background-image: url('assets/modo-oscur
 body.dark-mode .icon-linkedin::after  { background-image: url('assets/modo-oscuro/4.png'); }
 body.dark-mode .icon-youtube::after   { background-image: url('assets/modo-oscuro/5.png'); }
 body.dark-mode .icon-darkmode::after  { background-image: url('assets/modo-oscuro/6.png'); }
+
