@@ -24,3 +24,5 @@ body.dark-mode .icon-linkedin::after  { background-image: url('assets/modo-oscur
 body.dark-mode .icon-youtube::after   { background-image: url('assets/modo-oscuro/5.png'); }
 body.dark-mode .icon-darkmode::after  { background-image: url('assets/modo-oscuro/6.png'); }
 
+
+body.dark-mode .contact-img { background: url('assets/modo-oscuro/1.png') center/cover no-repeat; }

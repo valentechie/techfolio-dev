@@ -715,10 +715,11 @@ body {
 }
 
 /* Imagen ilustrativa */
-.contact-img img {
+.contact-img {
   width: 270px;
-  height: auto;
-  object-fit: cover;
+  height: 270px;
+  background: url('assets/footer.png') center/cover no-repeat;
+  flex-shrink: 0;
 }
 
 /* Detalles de contacto (texto + botón) */
@@ -729,48 +730,35 @@ body {
 
 /* Mensaje de contacto */
 .contact-details p {
-  font-size: 1.3rem;
+  font-size: var(--font-size);
   margin-bottom: 22px;
-  color: #222;
+  line-height: 1.5;
+  color: var(--color-text);
 }
 
 /* Botón de enviar email (azul, centrado, con icono) */
 .contact-btn {
-  background: #4079e0;
-  color: #fff;
-  font-weight: 500;
+  background: var(--color-bg-secondary);
+  color: var(--color-text);
+  font-weight: 600;
   text-decoration: none;
   padding: 13px 30px;
   border-radius: 10px;
-  font-size: 1.06rem;
+  font-size: 1.1rem;
   display: inline-flex;
   align-items: center;
   gap: 9px;
-  box-shadow: 0 2px 8px rgba(64,121,224,0.13);
+  box-shadow: var(--box-shadow);
   transition: background 0.2s;
 }
 .contact-btn:hover {
-  background: #305bbd;
+  background: var(--color-accent);
 }
 
-/* Icono de email en el botón */
 .contact-btn-icon {
   font-size: 1.3rem;
 }
 
-/* Responsive: imagen arriba, detalles abajo */
-@media (max-width: 700px) {
-  .contact-row {
-    flex-direction: column;
-    gap: 22px;
-  }
-  .contact-details {
-    text-align: center;
-    max-width: 100%;
-  }
-}
-
-/* Footer de la sección de contacto */
 .contact-footer {
   margin-top: 1px;
   font-size: 0.98rem;
@@ -782,7 +770,7 @@ body {
 }
 
 .contact-footer .footer-author {
-  color: #4079e0; /* azul moderno */
+  color: var(--color-accent);
   font-weight: 600;
   letter-spacing: 0.03em;
 }
